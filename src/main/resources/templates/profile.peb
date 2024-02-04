@@ -1,0 +1,26 @@
+<html>
+	<head>
+		<title>{% block title %}Agreement{% endblock %}</title>
+	</head>
+	<body>
+	{% block content %}
+	<div class="profile">
+		<table>
+		  <tr>
+		  	<th>Customer ID</th>
+		    <th>Contractor</th> 
+		    <th>Begin at</th>
+		  </tr>
+		    
+		  <tr>
+		  	{% for agreement in customer %}  
+		    <td>{{ agreement.id }}</td>
+		    <td>{{ agreement.customer }}</td>
+		    <td>{{ agreement.beginDate | date("yyyy-MM-dd") }}</td>
+		     {% endfor %} 
+		  </tr>	   
+		</table>        	
+	</div>   	  
+	{% endblock content%}
+	</body>
+</html>

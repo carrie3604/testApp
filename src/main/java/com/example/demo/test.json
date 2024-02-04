@@ -1,0 +1,26 @@
+{
+	"id": 123,
+	"name": Carrie,
+	"score": 95.5,
+	"graduated": true,
+	"age": null,
+	"courses": ["math", "english", "java"],
+	"pet":{
+		"name": "Simba",
+		"age": 2
+	},
+	"pets": [
+				{
+					"name": "Simba",
+					"age": 2
+				},
+				{
+					"name": "Nana",
+					"age": 4
+				},{
+					"name": "Scar",
+					"age": 5
+				}
+			]
+
+}

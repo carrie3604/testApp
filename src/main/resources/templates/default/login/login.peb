@@ -1,0 +1,55 @@
+{% extends 'default/login/index' %}
+
+	{% block mainBody %}
+		
+
+
+
+		{# Login Form Scope #}
+		 <div id="loginForm" class="login-wrapper">
+			 <div class="container login-body">
+				
+					<div class="login-logo">
+                        <div class="myspring-icon">
+                            <img src="/resources/img/spring-logo.svg" alt="mySpring  Logo" title="Spring Logo"/>
+                        </div>
+					</div>
+
+					
+					<form class="login-form" action="/myspring/login/dashboard" method="post" accept-charset="UTF-8">
+						<div class="input-mod">
+							<i class="fas fa-user"></i>
+							<input id="loginEmail" type="text" name="email"  placeholder="User"><br>
+							<br>
+						</div>
+
+						 <div class="input-mod">
+							<i class="fas fa-lock"></i>
+							<input type="text" id="passowrd" name="password" placeholder="Password"><br><br>
+						</div>
+
+						<div class="password-container">
+							<div class="passowrd-func">
+								<input type="checkbox" class="form-check-input" id="rememberPassword">
+								<label class="form-check-label" for="rememberPassword">Remember password</label>	
+							</div>
+
+							<div class="forget-password-container">
+								<a id="forgetPassword" href="#">Forget password</a>
+							</div>
+						</div>
+						<div class="login-btn-mod">
+							<i class="fa-solid fa-right-to-bracket"></i>
+														
+						<button type="submit">NOW LOGIN</button>	
+						</div>						
+					</form>	
+			</div>
+
+			{# Vue tutorial #}
+			<div style="margin-left: 2rem ">
+				<div> NT =  <input type="text" v-model="twd" v-on:input="jpy2twd"></div>
+				<div> jp = <input type="text" v-model="euro" v-on:input="twd2jpy"></div>
+			</div>
+		</div>
+	{% endblock %}

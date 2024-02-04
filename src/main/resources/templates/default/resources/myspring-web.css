@@ -1,0 +1,136 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Work Sans", sans-serif;
+    font-weight: 400;
+
+}
+
+body{
+    min-height: 50vh;
+    background-image: url(./img/grey.jpg);
+}
+
+.login-wrapper{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    margin: 20rem;
+    
+    
+
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 2rem 2.5rem;
+    width: 50vh;
+
+}
+
+.login-logo{
+    text-align: center;
+    margin-bottom: 10px;
+   
+}
+
+.input-mod{
+    position: relative;
+}
+
+.fas:first-child{
+    position: absolute;
+    right: 5%;
+    top: 30%;
+    opacity: 0.33;
+}
+
+.fas fa-sign-in-alt{
+    top:0
+}
+
+.login-btn-mod{
+    position: relative;
+   
+}
+
+.login-btn-mod{
+    position: relative;
+}
+
+i.fa-solid.fa-right-to-bracket{
+    position: absolute;
+    right: 5%;
+    bottom: 17%;
+    color: white;
+}
+
+
+input[type=text]{
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 3px solid #ccc;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+  text-align: left;
+  font-size: 20px;
+}
+
+input[type=text]:focus {
+    border: 3px solid #555555;
+  }
+
+.password-container{
+    display: flex;
+}
+
+.passowrd-func{
+  
+    width: 100%;
+}
+
+.forget-password-container{
+    width: 100%;
+    text-align: end;
+}
+
+
+#forgetPassword{
+    text-decoration:none;
+    color: rgba(121, 165, 40, 0.85);  
+    
+}
+
+
+  button{
+    background-color: #4d8855; /* Green */
+    border: none;
+    color: white;
+    padding: 12px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    width: 100%;
+    margin-top: 2rem;
+    
+  }
+
+  button:hover{
+    box-shadow: 0 12px 16px 0 rgba(187, 228, 207, 0.24), 0 17px 50px 0 rgba(197, 235, 175, 0.19);
+    cursor: pointer;
+  }
+
+
+
+
+
+
+
+
