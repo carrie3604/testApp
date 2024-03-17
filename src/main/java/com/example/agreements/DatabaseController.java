@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class DatabaseController
 {
     @Autowired
-    private AgreementRepository agreementRepository;
+    private AgreementCrudRepository agreementRepository;
 
     @GetMapping("/agreement-1")
     public String showAgreement1()

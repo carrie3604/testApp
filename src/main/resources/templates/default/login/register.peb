@@ -1,0 +1,46 @@
+{% extends 'default/login/index' %}
+
+	{% block mainBody %}	
+		 <div id="registerForm" class="center-wrapper">
+			 <div class="container sign-up-body">
+				
+					<div class="sign-up-header">
+						<header>Signup</header>	
+					</div>
+					{%if errorInput %}
+					<div class="text-danger" v-cloak>Error Input</div>
+					 {%endif %}
+
+					<form class="register-form" method="post" accept-charset="UTF-8">		
+						
+						<div class="input-mod">
+							<i class="fas fa-user"></i>
+							<input v-model="$v.form.email.$model" id="email" type="text" name="email"  placeholder="Create User">	
+						</div>
+						<div class="text-danger" v-if="$v.form.email.$error" v-cloak>Email is required</div> 
+
+						 <div class="input-mod">
+							<i class="fas fa-lock"></i>
+							<input v-model="$v.form.password.$model" type="text" id="password" name="password" placeholder="Create Password">
+							<div class="text-danger" v-if="$v.form.password.$error" v-cloak>Password is required</div>
+						</div>
+
+						<div class="input-mod">
+							<i class="fas fa fa-eye-slash"></i>
+							<input v-model="$v.form.repeatPassword.$model" type="text" id="repeatPassword" name="repeatPassword" placeholder="Confirm Password">
+							 <div class="text-danger" v-if="!$v.form.repeatPassword.sameAs" v-cloak>Passwords do not match</div> 
+							 <div class="text-danger" v-if="!$v.form.repeatPassword.required && $v.form.repeatPassword.$error " v-cloak>Repeat password is required</div> 
+						</div>
+
+						<div class="signup-btn-mod">
+							<i class="fa-solid fa-right-to-bracket"></i>									
+							<button @click="handleSubmit">Signup</button>	
+						</div>
+						<div class="sign-up-link">Already have an account?<a href="/myspring/login">Login</a></div>						
+					</form>	
+			</div>
+
+		</div>
+
+		
+	{% endblock %}

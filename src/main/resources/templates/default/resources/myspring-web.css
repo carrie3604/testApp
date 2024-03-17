@@ -12,13 +12,11 @@ body{
     background-image: url(./img/grey.jpg);
 }
 
-.login-wrapper{
+.center-wrapper{
     display: flex;
     align-content: center;
     justify-content: center;
-    margin: 20rem;
-    
-    
+    margin: 20rem; 
 
 }
 
@@ -44,7 +42,7 @@ body{
 .fas:first-child{
     position: absolute;
     right: 5%;
-    top: 30%;
+    top: 34.5%;
     opacity: 0.33;
 }
 
@@ -68,6 +66,18 @@ i.fa-solid.fa-right-to-bracket{
     color: white;
 }
 
+.sign-up-link{
+    padding-top: 15px;
+    text-align: center;
+}
+
+.sign-up-link a{
+    text-decoration: none;
+    padding-left: 10px;
+    color: #16a085;
+}
+
+
 
 input[type=text]{
   width: 100%;
@@ -79,32 +89,37 @@ input[type=text]{
   transition: 0.5s;
   outline: none;
   text-align: left;
-  font-size: 20px;
+  font-size: 15px;
 }
 
 input[type=text]:focus {
     border: 3px solid #555555;
   }
 
+.text-danger{
+    font-size: 13px;
+    color: #dc3545;
+}
+
 .password-container{
     display: flex;
 }
 
 .passowrd-func{
-  
+    margin-top: 10px;
     width: 100%;
 }
 
 .forget-password-container{
     width: 100%;
     text-align: end;
+    margin-top: 9px;
 }
 
 
 #forgetPassword{
     text-decoration:none;
-    color: rgba(121, 165, 40, 0.85);  
-    
+    color: rgba(111, 145, 48, 0.85); 
 }
 
 
@@ -125,6 +140,18 @@ input[type=text]:focus {
   button:hover{
     box-shadow: 0 12px 16px 0 rgba(187, 228, 207, 0.24), 0 17px 50px 0 rgba(197, 235, 175, 0.19);
     cursor: pointer;
+  }
+
+
+/* Signup Form */
+  .sign-up-header {
+    margin-bottom: 10px;
+  }
+
+ .sign-up-header header{
+    font-weight: 600;
+    font-size: 25px;
+    text-align: center;
   }
 
 

@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 public class AgreementController
 {
     @Autowired
-    private AgreementRepository agreementRepository;
+    private AgreementCrudRepository agreementRepository;
 
     @GetMapping("/test1")
     public String welcome()

@@ -1,0 +1,19 @@
+{% extends 'default/login/index' %}
+
+	{% block mainBody %}	
+		 <div id="registerSuccess" class="center-wrapper">
+			 <div class="container">
+                        
+                {# login Success #}
+                <h3 id="status">Success</h3>
+                <div>
+                    <p id="message">
+                        Congratulations, your account has been successfully created.
+                    </p>
+                    <a href="#" id="contBtn">Continue</a>
+                </div>
+
+					
+			</div>
+		</div>
+	{% endblock %}
