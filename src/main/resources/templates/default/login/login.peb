@@ -1,12 +1,8 @@
 {% extends 'default/login/index' %}
 
-	{% block mainBody %}
-		
-
-
-
+	{% block mainBody %}	
 		{# Login Form Scope #}
-		 <div id="loginForm" class="login-wrapper">
+		 <div id="loginForm" class="center-wrapper">
 			 <div class="container login-body">
 				
 					<div class="login-logo">
@@ -15,17 +11,18 @@
                         </div>
 					</div>
 
-					
-					<form class="login-form" action="/myspring/login/dashboard" method="post" accept-charset="UTF-8">
+				
+					<form class="login-form" action="/myspring/login/dashboard" method="post" accept-charset="UTF-8">			
 						<div class="input-mod">
 							<i class="fas fa-user"></i>
-							<input id="loginEmail" type="text" name="email"  placeholder="User"><br>
-							<br>
+							<input v-model="email" id="loginEmail" type="text" name="email"  placeholder="User">	
 						</div>
+						<div class="text-danger" v-if="$v.email.$error" v-cloak>Email is required</div>
 
 						 <div class="input-mod">
 							<i class="fas fa-lock"></i>
-							<input type="text" id="passowrd" name="password" placeholder="Password"><br><br>
+							<input v-model="password" type="text" id="passowrd" name="password" placeholder="Password">
+							<div class="text-danger" v-if="$v.password.$error" v-cloak>Password is required</div>
 						</div>
 
 						<div class="password-container">
@@ -38,18 +35,19 @@
 								<a id="forgetPassword" href="#">Forget password</a>
 							</div>
 						</div>
+
 						<div class="login-btn-mod">
-							<i class="fa-solid fa-right-to-bracket"></i>
-														
-						<button type="submit">NOW LOGIN</button>	
-						</div>						
+							<i class="fa-solid fa-right-to-bracket"></i>									
+							<button type="submit" @click="handleSubmit">NOW LOGIN</button>	
+						</div>
+						<div class="sign-up-link">Not a member?<a href="users/register">Signup Now</a></div>						
 					</form>	
 			</div>
 
-			{# Vue tutorial #}
+			{# Vue tutorial
 			<div style="margin-left: 2rem ">
 				<div> NT =  <input type="text" v-model="twd" v-on:input="jpy2twd"></div>
 				<div> jp = <input type="text" v-model="euro" v-on:input="twd2jpy"></div>
-			</div>
+			</div> #}
 		</div>
 	{% endblock %}

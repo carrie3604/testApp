@@ -5,7 +5,7 @@ import jakarta.persistence.EntityManagerFactory;
 import jakarta.persistence.Persistence;
 import jakarta.persistence.Query;
 
-public class AgreementDAOTest
+public class AgreementRepo
 {
     public void test()
     {
