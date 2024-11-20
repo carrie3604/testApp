@@ -1,7 +1,7 @@
 {% extends 'default/login/index' %}
 
 	{% block mainBody %}	
-		 <div id="registerForm" class="center-wrapper">
+		 <div id="registerForm" class="center-wrapper">dfdddddddf
 			 <div class="container sign-up-body">
 				
 					<div class="sign-up-header">

@@ -20,6 +20,7 @@ public class UserEntity
     private String email;
     @NotBlank
     private String password;
+    private Boolean rememberMe;
 
     public int getId()
     {
